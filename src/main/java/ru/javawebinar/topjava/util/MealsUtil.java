@@ -17,11 +17,25 @@ public class MealsUtil {
         List<Meal> meals = Arrays.asList(
                 new Meal(LocalDateTime.of(2020, Month.JANUARY, 30, 10, 0), "Завтрак", 500),
                 new Meal(LocalDateTime.of(2020, Month.JANUARY, 30, 13, 0), "Обед", 1000),
-                new Meal(LocalDateTime.of(2020, Month.JANUARY, 30, 20, 0), "Ужин", 500),
+                new Meal(LocalDateTime.of(2020, Month.JANUARY, 30, 20, 0), "Ужин", 510),
                 new Meal(LocalDateTime.of(2020, Month.JANUARY, 31, 0, 0), "Еда на граничное значение", 100),
                 new Meal(LocalDateTime.of(2020, Month.JANUARY, 31, 10, 0), "Завтрак", 1000),
                 new Meal(LocalDateTime.of(2020, Month.JANUARY, 31, 13, 0), "Обед", 500),
                 new Meal(LocalDateTime.of(2020, Month.JANUARY, 31, 20, 0), "Ужин", 410)
+
+
+//                Map<LocalDate, Integer> caloriesSumByDate = new HashMap<>();
+//                Map<LocalDate, AtomicBoolean> exceededMap = new HashMap<>();
+
+//                                       AtomicBoolean
+//                day        calories      exeess
+//                30.01      500            false                                         filter
+////                                                                                      map   (Meal  -> MealTo)
+
+//                30.01      1500           false
+//                30.01      2010           true
+
+
         );
 
         final LocalTime startTime = LocalTime.of(7, 0);

@@ -1,6 +1,7 @@
 package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MealTo {
     private final LocalDateTime dateTime;
@@ -11,7 +12,7 @@ public class MealTo {
 
     private final boolean excess;
 
-    public MealTo(LocalDateTime dateTime, String description, int calories, boolean excess) {
+    public MealTo(LocalDateTime dateTime, String description, int calories, AtomicBoolean excess) {
         this.dateTime = dateTime;
         this.description = description;
         this.calories = calories;
